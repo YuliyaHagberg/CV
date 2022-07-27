@@ -4,9 +4,15 @@
 .navbar {
     position: fixed;
     width: 100%;
+    height: 100px;
     background: white;
     font-family: 'Coco Gothic', sans-serif;
     font-family: 'Coco Gothic Alternate', sans-serif;
+}
+
+.navbar .logo {
+    width: 100px;
+    height: 80px;
 }
 
 .main .menu li a {
@@ -30,3 +36,9 @@
 
 .main ul li:nth-child(1){float: left;}
 .main ul li:nth-child(2){float: left;}
+
+.main ul li a:hover{
+    transition: 1s;
+    background-color: #EFE7DD;
+    border-radius: 5px;
+}
