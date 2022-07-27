@@ -1,0 +1,32 @@
+
+
+/* navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: white;
+    font-family: 'Coco Gothic', sans-serif;
+    font-family: 'Coco Gothic Alternate', sans-serif;
+}
+
+.main .menu li a {
+    color: #101F24;
+    padding: 10px 35px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.main ul {
+    margin: auto;
+    padding: 20px 0 0;
+    list-style: none;
+    text-align: right;
+}
+
+.main ul li {
+    float: none;
+    display: inline-block;
+}
+
+.main ul li:nth-child(1){float: left;}
+.main ul li:nth-child(2){float: left;}
