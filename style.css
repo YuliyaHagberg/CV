@@ -78,3 +78,21 @@ ul:last-child {
     background-color: #EFE7DD;
     border-radius: 5px;
 }
+
+/* social media circles in navbar */
+.navbar .social {
+    float: left;
+    margin-left: 0%;
+    position: fixed;
+    left: 30px;
+    top: 37px;
+ }
+
+ .navbar .social a {
+    color: #B29E84;
+    padding: 7px;
+ }
+
+ .navbar .social a:hover {
+    color: #253439;
+ }
