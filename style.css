@@ -1,8 +1,13 @@
-
+.body {
+    margin: 0%;
+    padding: 0%;
+}
 
 /* navbar styling */
 .navbar {
-    position: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100px;
     background: white;
@@ -10,9 +15,16 @@
     font-family: 'Coco Gothic Alternate', sans-serif;
 }
 
-.navbar .logo {
+.navbar .logo img {
     width: 100px;
     height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 0 px;
+    transform: translateX(-50%);
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .main .menu li a {
@@ -20,6 +32,13 @@
     padding: 10px 35px;
     font-size: 18px;
     text-decoration: none;
+    display: block;
+}
+
+.main ul li {
+    float: none;
+    display: inline-block;
+    position: relative;
 }
 
 .main ul {
@@ -29,13 +48,30 @@
     text-align: right;
 }
 
-.main ul li {
-    float: none;
-    display: inline-block;
+/* högra delen av nav */
+ul:first-child {
+    margin-right: 13%;
 }
 
-.main ul li:nth-child(1){float: left;}
-.main ul li:nth-child(2){float: left;}
+/* vänstra delen av nav */
+ul:last-child {
+    margin-left: 10%;
+}
+
+.main {
+    float: none;
+    display: inline-block;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* gör så att 1 & 2 är till vänster */
+.main ul li:nth-child(1) {
+    float: left;
+}
+.main ul li:nth-child(2) {
+    float: left;
+}
 
 .main ul li a:hover{
     transition: 1s;
