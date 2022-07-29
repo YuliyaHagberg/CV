@@ -11,8 +11,7 @@
     width: 100%;
     height: 100px;
     background: white;
-    font-family: 'Coco Gothic', sans-serif;
-    font-family: 'Coco Gothic Alternate', sans-serif;
+    font-family:'Coco-Gothic', light;
 }
 
 .navbar .logo img {
@@ -43,7 +42,7 @@
 
 .main ul {
     margin: auto;
-    padding: 20px 0 0;
+    padding: 20px 20px;
     list-style: none;
     text-align: right;
 }
@@ -55,7 +54,7 @@ ul:first-child {
 
 /* vänstra delen av nav */
 ul:last-child {
-    margin-left: 10%;
+    margin-left: 7%;
 }
 
 .main {
@@ -83,14 +82,14 @@ ul:last-child {
 .navbar .social {
     float: left;
     margin-left: 0%;
-    position: fixed;
-    left: 30px;
-    top: 37px;
+    position: relative;
+    left: 20px;
+    top: 30px;
  }
 
  .navbar .social a {
     color: #B29E84;
-    padding: 7px;
+    padding: 5px;
  }
 
  .navbar .social a:hover {
@@ -100,8 +99,8 @@ ul:last-child {
  /* språk drop down menu */
  .form-select {
     border: none;
-    position: fixed;
-    top: 37px;
+    position: relative;
+    top: 30px;
     right: 30px;
     display: block; 
     font-size: 1rem;
@@ -110,3 +109,46 @@ ul:last-child {
     cursor: pointer;
  }
 
+/* home styling */
+.home {
+    color: white;
+    justify-content: left;
+    display: flex;
+    padding-bottom: 600px;
+    background-color: #253439;
+    /* background: url("Background.svg") no-repeat; */
+}
+
+.home .home-content {
+    margin: 70px 350px auto 250px;
+}
+
+.home .home-title {
+    font-family: 'Coco-Gothic', regular;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: xx-large;
+}
+
+.home .home-text {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.home .home-content .contact-info {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 10px;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.home .home-photo img {
+    height: 450px;
+    width: 300px;
+    position: relative;
+    top: 30px;
+    right: 230px;
+}
