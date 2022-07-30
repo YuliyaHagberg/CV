@@ -1,3 +1,5 @@
+
+
 // typing animation
 var typed = new Typed(".typing", {
     strings: ["Front-end utvecklare", "Inredare", "Designer"],

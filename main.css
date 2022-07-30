@@ -155,28 +155,3 @@ ul:last-child {
     top: 30px;
     right: 230px;
 }
-
-/* scroll upp button */
-/* .scroll-up {
-    position: fixed;
-    height: 40px;
-    width: 40px;
-    right: 30px;
-    bottom: 30px;
-    background: #B29E84;
-    text-align:center;
-    line-height: 40px;
-    color:white;
-    z-index: 9999;
-    font-size: 25px;
-    border-radius:3px;
-    cursor:pointer;
-    opacity:0;
-    pointer-events: none;
-    transition:all 0.4s ease;
-}
-
-.scroll-upp.show {
-    opacity: 1;
-    pointer-events: auto;
-} */
