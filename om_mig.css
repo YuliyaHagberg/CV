@@ -110,3 +110,47 @@ ul:last-child {
     background-color: white;
     cursor: pointer;
  }
+
+ /* text styling */
+ .filosofi {
+    color: white;
+    justify-content: left;
+    padding-bottom: 80px;
+    background-color: #253439;
+    background-size: 100%;
+    position: absolute;
+}
+
+.filosofi .title {
+    font-family: 'Coco-Gothic', regular;
+    letter-spacing: 2px;
+    font-size: xx-large;
+    margin: 70px 470px 30px 150px;
+}
+
+.filosofi .title2 {
+    font-family: 'Coco-Gothic', regular;
+    letter-spacing: 2px;
+    font-size: x-large;
+    margin: 50px 470px 15px 150px;
+}
+
+.filosofi .text {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px 530px auto 150px;
+}
+
+.filosofi .middle {
+    font-family: 'Coco-Gothic', bold;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin: 30px 580px 30px 200px;
+}
