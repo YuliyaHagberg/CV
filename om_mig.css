@@ -128,11 +128,13 @@ ul:last-child {
     cursor:pointer;
     opacity:0.5;
     pointer-events: none;
+    border: none;
     transition:all 0.4s ease;
 }
 
 .scroll-up.show {
     opacity: 1;
+    border: none;
     pointer-events: auto;
 }
 
