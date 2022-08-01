@@ -17,7 +17,7 @@
     </style>
     <script src=""></script>
 </head>
-
+    <!-- TODO fix main classes in nav and in section -->
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="fas fa-angle-up"></button>
     
@@ -28,9 +28,9 @@
         <div class="social">
             <a href="mailto:yuliya.swe@gmail.com"><i class="fa-solid fa-envelope fa-lg"></i></a>
             <a href="https://linkedin.com/in/yuliyahagberg/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-            <a href="https://github.com/YuliyaHagberg"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://github.com/YuliyaHagberg" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
         </div>
-        <div class="main">
+        <div class="mainnav">
             <ul class="menu">
                 <li><a href="utbildning.html">Utbildning</a></li>
                 <li><a href="erfarenhet.html">Erfarenhet</a></li>
@@ -48,32 +48,85 @@
             </select>
         </div>
     </nav>
+<section class="erfarenhet">
 
-    <div class="erfarenhet">
-        <img class="logos" src="images/PE.svg">
-        <p class="title"><em>Digital Designer</em></p>
-        <p class="text1">Progressiva Ekonomer</p>
-        <p class="text2">Juni - Juli 2022</p>
-        <p class="text3"></p>
-
-        <img class="logos" src="images/Beautyka.svg">
-        <p class="title"><em>Art Director</em></p>
-        <p class="text1">Beautyka AB</p>
-        <p class="text2">April 2018 - Maj 2022</p>
-        <p class="text3"></p>
-
-        <img class="logos" src="images/Datana.svg">
-        <p class="title"><em>Grafisk designkonsult</em></p>
-        <p class="text1">Datana</p>
-        <p class="text2">Oktober 2021</p>
-        <p class="text3"></p>
-
-        <img class="logos" src="images/appen-logo.png">
-        <p class="title"><em>Transkriberare</em></p>
-        <p class="text1">Appen</p>
-        <p class="text2">April 2022 - nu</p>
-        <p class="text3"></p>
+    <div class="flex-container">
+        <div class="aside">
+            <a href="https://github.com/gofven" target="_blank"><img class="logos box" src="images/Flowback.svg"></a>
+        </div>
+        <div class="main">
+            <a class="title box"><em>Designkonsult och utvecklare, </em></a>
+            <a id="date1" class="text3 box 1">Januari 2022 - nu</a>
+            <p class="text1 box">Flowback</p>
+            <p class="text2 box">Jag var rådgivare gällande designen som togs fram i Figma och 
+                har hjälpt till med utveckling. Projektet är en demokrati-plattform vars källkod är öppen.</p>
+        </div>
     </div>
+
+    <div class="flex-container">
+        <div class="aside">
+            <a href="https://digitaldemokrati.se/" target="_blank"><img class="logos box" src="images/DD.svg"></a>
+        </div>
+        <div class="main">
+            <a class="title box"><em>Grafisk designkonsult, </em></a>
+            <a id="date1" class="text3 box 1">Mars 2022</a>
+            <p class="text1 box">Föreningen för Digital demokrati</p>
+            <p class="text2 box">Jag gjorde en presentation efter kundens önskemål och lite annat grafiskt material.</p>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="aside">
+            <a href="https://progressiva-ekonomer.se/" target="_blank"><img class="logos box" src="images/PE.svg"></a>
+        </div>
+        <div class="main">
+            <a class="title box"><em>Digital Designer, </em></a>
+            <a id="date1" class="text3 box 1">Juni - Juli 2022</a>
+            <p class="text1 box">Progressiva Ekonomer</p>
+            <p class="text2 box">Jag skapade en logga i olika varianter åt en ideell förening. 
+                Loggan var anpassad efter kundens önskemål.</p>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="aside">
+            <a><img class="logos box" src="images/Beautyka.svg"></a>
+        </div>
+        <div class="main">
+            <a class="title box"><em>Art Director, </em></a>
+            <a id="date2" class="text3 box 2">April 2018 - Maj 2022</a>
+            <p class="text1 box">Beautyka</p>
+            <p class="text2 box">Jag ansvarade för content bestående av text, bilder, filmer, och 
+                skapade visuellt material med hjälp av Canva.</p>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="aside">
+            <a href="https://www.datana.se/" target="_blank"><img class="logos box" src="images/Datana.svg"></a>
+        </div>
+        <div class="main">
+            <a class="title box"><em>Grafisk designkonsult, </em></a>
+            <a id="date3" class="text3 box 3">Oktober 2021</a>
+            <p class="text1 box">Datana</p>
+            <p class="text2 box">Jag gjorde en PowerPoint efter kundens önskemål. I den använde jag grafiska 3D
+                detaljer som jag skapade själv i Affinity Designer.</p>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="aside">
+            <a><img class="logos box" src="images/appen-logo.svg"></a>
+        </div>
+        <div class="main">
+            <a class="title box"><em>Transkriberare, </em></a>
+            <a id="date4" class="text3 box 4">April 2022 - nu</a>
+            <p class="text1 box">Appen</p>
+            <p class="text2 box">Jobbet gick ut på att transkribera diverse ljudfiler.</p>
+        </div>
+    </div>
+
+</section>
 </body>
 
 <footer>
