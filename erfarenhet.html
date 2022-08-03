@@ -23,7 +23,7 @@
     
     <nav class="navbar">
         <div class="logo">
-            <a href="main.html"><img src="images/yhlogo.svg" class="logo"/></a>
+            <a href="main.html"><img src="images/yhlogo.svg" alt="Yuliya Hagberg" class="logo"/></a>
         </div>
         <div class="social">
             <a href="mailto:yuliya.swe@gmail.com"><i class="fa-solid fa-envelope fa-lg"></i></a>
@@ -52,7 +52,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://github.com/gofven" target="_blank"><img class="logos box" src="images/Flowback.svg"></a>
+            <a href="https://github.com/gofven" target="_blank"><img class="logos box" src="images/Flowback.svg" alt="Flowbacks logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Designkonsult och utvecklare, </em></a>
@@ -65,7 +65,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://digitaldemokrati.se/" target="_blank"><img class="logos box" src="images/DD.svg"></a>
+            <a href="https://digitaldemokrati.se/" target="_blank"><img class="logos box" src="images/DD.svg" alt="Föreningens logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Grafisk designkonsult, </em></a>
@@ -77,7 +77,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://progressiva-ekonomer.se/" target="_blank"><img class="logos box" src="images/PE.svg"></a>
+            <a href="https://progressiva-ekonomer.se/" target="_blank"><img class="logos box" src="images/PE.svg" alt="Progressiva Ekonomers logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Digital Designer, </em></a>
@@ -90,7 +90,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a><img class="logos box" src="images/Beautyka.svg"></a>
+            <a><img class="logos box" src="images/Beautyka.svg" alt="Beautykas logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Art Director, </em></a>
@@ -103,7 +103,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://www.datana.se/" target="_blank"><img class="logos box" src="images/Datana.svg"></a>
+            <a href="https://www.datana.se/" target="_blank"><img class="logos box" src="images/Datana.svg" alt="Datans logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Grafisk designkonsult, </em></a>
@@ -116,7 +116,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a><img class="logos box" src="images/appen-logo.svg"></a>
+            <a><img class="logos box" src="images/appen-logo.svg" alt="Appens logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Transkriberare, </em></a>
@@ -125,11 +125,53 @@
             <p class="text2 box">Jobbet gick ut på att transkribera diverse ljudfiler.</p>
         </div>
     </div>
-
 </section>
-</body>
 
-<footer>
-</footer>
+<section class="contact" id="contact">
+    <div class="text">Kontakta mig</div>
+    <div class="container">
+        <div class="container1">
+            <form action="https://formsubmit.co/yuliya.swe@gmail.com" method="POST">
+                <div class="fields">
+                    <div class="field name">
+                        <input type="text" name="Name" placeholder="Namn" required>
+                    </div>
+                    <div class="field email">
+                        <input type="email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea type="text" name="Message" placeholder="Meddelande..." required></textarea>
+                    </div>
+                        <input type="submit" value="Skicka" class="button"></input>
+                </div>
+            </form>
+        </div>
+
+        <div class="info">
+            <div class="container2">
+                <i class="fa-solid fa-user icon"></i>
+                <h3 class="undertitle">Namn:</h3>
+                <h4 class="undertext">Yuliya Hagberg</h4>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-location-dot icon"></i>
+                <h3 class="undertitle">Plats:</h3>
+                <h4 class="undertext">Stockholm, Sverige</h4>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-phone icon"></i>
+                <h3 class="undertitle">Mobilnummer:</h3>
+                <h4 class="undertext">+46 728 790 804</h4>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-envelope icon"></i>
+                <h3 class="undertitle">Email:</h3>
+                <h4 class="undertext">yuliya.swe@gmail.com</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
 
 </html>

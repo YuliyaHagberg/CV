@@ -28,7 +28,7 @@ body {
     justify-content: center;
 }
 
-.main .menu li a {
+.mainnav .menu li a {
     color: #101F24;
     padding: 10px 35px;
     font-size: 18px;
@@ -36,13 +36,13 @@ body {
     display: block;
 }
 
-.main ul li {
+.mainnav ul li {
     float: none;
     display: inline-block;
     position: relative;
 }
 
-.main ul {
+.mainnav ul {
     margin: auto;
     padding: 20px 20px;
     list-style: none;
@@ -59,7 +59,7 @@ ul:last-child {
     margin-left: 7%;
 }
 
-.main {
+.mainnav {
     float: none;
     display: inline-block;
     width: 1170px;
@@ -67,14 +67,14 @@ ul:last-child {
 }
 
 /* gör så att 1 & 2 är till vänster */
-.main ul li:nth-child(1) {
+.mainnav ul li:nth-child(1) {
     float: left;
 }
-.main ul li:nth-child(2) {
+.mainnav ul li:nth-child(2) {
     float: left;
 }
 
-.main ul li a:hover{
+.mainnav ul li a:hover{
     transition: 1s;
     background-color: #EFE7DD;
     border-radius: 5px;
@@ -177,24 +177,123 @@ ul:last-child {
     margin: 30px 580px 30px 200px;
 }
 
-.contact form .fields {
-    display: flex;
-}
-
-.contact form .field {
-    height: 45px;
-    width: 100%;
-}
-
-.contact form .fields input {
-    height: 100%;
-    width: 100%;
-}
-
+/* Kontakta mig */
 .contact .text {
     font-family: 'Coco-Gothic', regular;
     letter-spacing: 2px;
     font-size: x-large;
     text-align: center;
-    margin:40px;
+    margin-top:50px;
+    margin-bottom: 15px;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 80px;
+    margin-left: 50px;
+}
+
+.container1 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1/2;
+    grid-template-rows: 1/5;
+    padding: 30px 80px;
+}
+
+.field input, .field textarea {
+    height: 40px;
+    width:100%;
+    background-color:#f6f3ef;
+    border-bottom:#B29E84 4px solid;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+input[type=text]:focus {
+    border-bottom:#253439 4px solid;
+    outline:none;
+}
+
+input[type=email]:focus {
+    border-bottom:#253439 4px solid;
+    outline:none;
+}
+
+textarea[type=text]:focus {
+    border-bottom:#253439 4px solid;
+    outline:none;
+  }
+
+.field textarea {
+    align-content: center;
+    resize:vertical;
+    height: 80px;
+    min-height: 40px;
+}
+
+.container1 .button {
+    border: none;
+    background-color:#101F24;
+    color: white;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container1 .button:hover {
+    background-color:#B29E84;
+    color:#101F24;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 2/3;
+    grid-template-rows: 1/5;
+    /* border: 1px solid #101F24; */
+    align-content: start;
+    padding:20px;
+}
+
+.container2 {
+    display:grid;
+    grid-template-columns: 30px auto 1fr;
+    align-items:right;
+    align-content: start;
+    /* border: 1px solid #101F24; */
+}
+
+.container2 .icon {
+    color:#101F24;
+    font-size: large;
+    align-self: center;
+}
+
+.contact .undertitle {
+    font-family: 'Coco-Gothic', regular;
+    letter-spacing: 2px;
+    font-size: large;
+    text-align: left;
+    align-self: center;
+}
+
+.contact .undertext {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: medium;
+    font-weight: lighter;
+    text-align: left;
+    align-self: center;
+    margin: 10px;
 }

@@ -31,7 +31,7 @@
             <a href="https://linkedin.com/in/yuliyahagberg/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
             <a href="https://github.com/YuliyaHagberg"><i class="fa-brands fa-github fa-lg"></i></a>
         </div>
-        <div class="main">
+        <div class="mainnav">
             <ul class="menu">
                 <li><a href="utbildning.html">Utbildning</a></li>
                 <li><a href="erfarenhet.html">Erfarenhet</a></li>
@@ -107,29 +107,49 @@
 
     <section class="contact" id="contact">
         <div class="text">Kontakta mig</div>
-            <div class="left">
-                
+        <div class="container">
+            <div class="container1">
+                <form action="https://formsubmit.co/yuliya.swe@gmail.com" method="POST">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" name="Name" placeholder="Namn" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" name="Email" placeholder="Email" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea type="text" name="Message" placeholder="Meddelande..." required></textarea>
+                        </div>
+                            <input type="submit" value="Skicka" class="button"></input>
+                    </div>
+                </form>
             </div>
-            <div class="right">
-            <form action="#">
-                <div class="fields">
-                    <div class="field name">
-                        <input type="text" placeholder="Namn" required>
-                    </div>
-                    <div class="field email">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="field textarea">
-                        <textarea cols="30" rows="15" placeholder="Skriv någonting" required></textarea>
-                    </div>
-                    <div class="button">
-                        <button type="submit">Skicka</button>
-                    </div>
+
+            <div class="info">
+                <div class="container2">
+                    <i class="fa-solid fa-user icon"></i>
+                    <h3 class="undertitle">Namn:</h3>
+                    <h4 class="undertext">Yuliya Hagberg</h4>
                 </div>
-            </form>
-        </div>
+                <div class="container2">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <h3 class="undertitle">Plats:</h3>
+                    <h4 class="undertext">Stockholm, Sverige</h4>
+                </div>
+                <div class="container2">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <h3 class="undertitle">Mobilnummer:</h3>
+                    <h4 class="undertext">+46 728 790 804</h4>
+                </div>
+                <div class="container2">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <h3 class="undertitle">Email:</h3>
+                    <h4 class="undertext">yuliya.swe@gmail.com</h4>
+                </div>
+            </div>
         </div>
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

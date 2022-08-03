@@ -180,3 +180,124 @@ ul:last-child {
   #myBtn:hover {
     background-color: #555;
   }
+
+/* Kontakta mig */
+.contact .text {
+    font-family: 'Coco-Gothic', regular;
+    letter-spacing: 2px;
+    font-size: x-large;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 15px;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 80px;
+    margin-left: 50px;
+}
+
+.container1 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1/2;
+    grid-template-rows: 1/5;
+    padding: 30px 80px;
+}
+
+.field input, .field textarea {
+    height: 40px;
+    width:100%;
+    background-color:#f6f3ef;
+    border-bottom:#B29E84 4px solid;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+input[type=text]:focus {
+    border-bottom:#253439 4px solid;
+    outline:none;
+}
+
+input[type=email]:focus {
+    border-bottom:#253439 4px solid;
+    outline:none;
+}
+
+textarea[type=text]:focus {
+    border-bottom:#253439 4px solid;
+    outline:none;
+  }
+
+.field textarea {
+    align-content: center;
+    resize:vertical;
+    height: 80px;
+    min-height: 40px;
+}
+
+.container1 .button {
+    border: none;
+    background-color:#101F24;
+    color: white;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container1 .button:hover {
+    background-color:#B29E84;
+    color:#101F24;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 2/3;
+    grid-template-rows: 1/5;
+    /* border: 1px solid #101F24; */
+    align-content: start;
+    padding:20px;
+}
+
+.container2 {
+    display:grid;
+    grid-template-columns: 30px auto 1fr;
+    align-items:right;
+    align-content: start;
+    /* border: 1px solid #101F24; */
+}
+
+.container2 .icon {
+    color:#101F24;
+    font-size: large;
+    align-self: center;
+}
+
+.contact .undertitle {
+    font-family: 'Coco-Gothic', regular;
+    letter-spacing: 2px;
+    font-size: large;
+    text-align: left;
+    align-self: center;
+}
+
+.contact .undertext {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: medium;
+    font-weight: lighter;
+    text-align: left;
+    align-self: center;
+    margin: 10px;
+}

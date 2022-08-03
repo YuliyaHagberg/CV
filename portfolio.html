@@ -23,7 +23,7 @@
     
     <nav class="navbar">
         <div class="logo">
-            <a href="main.html"><img src="images/yhlogo.svg" class="logo"/></a>
+            <a href="main.html"><img src="images/yhlogo.svg" alt="Yuliya Hagberg" class="logo"/></a>
         </div>
         <div class="social">
             <a href="mailto:yuliya.swe@gmail.com"><i class="fa-solid fa-envelope fa-lg"></i></a>
@@ -51,7 +51,7 @@
 
 <section class="portfolio">
     <h1 class="title">Saker jag har gjort</h1>
-    <div class="container">        
+    <div class="container3">        
         <div class="flex-item" style="background-image: url(images/Inredning.svg)">
         </div>
 
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="container2">        
+    <div class="container4">        
         <div class="flex-items" style="background-image: url(images/Beautyka.png)">
         </div>
 
@@ -107,6 +107,51 @@
     </div>
 </section>
 
+<section class="contact" id="contact">
+    <div class="text">Kontakta mig</div>
+    <div class="container">
+        <div class="container1">
+            <form action="https://formsubmit.co/yuliya.swe@gmail.com" method="POST">
+                <div class="fields">
+                    <div class="field name">
+                        <input type="text" name="Name" placeholder="Namn" required>
+                    </div>
+                    <div class="field email">
+                        <input type="email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea type="text" name="Message" placeholder="Meddelande..." required></textarea>
+                    </div>
+                        <input type="submit" value="Skicka" class="button"></input>
+                </div>
+            </form>
+        </div>
+
+        <div class="info">
+            <div class="container2">
+                <i class="fa-solid fa-user icon"></i>
+                <h3 class="undertitle">Namn:</h3>
+                <h4 class="undertext">Yuliya Hagberg</h4>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-location-dot icon"></i>
+                <h3 class="undertitle">Plats:</h3>
+                <h4 class="undertext">Stockholm, Sverige</h4>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-phone icon"></i>
+                <h3 class="undertitle">Mobilnummer:</h3>
+                <h4 class="undertext">+46 728 790 804</h4>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-envelope icon"></i>
+                <h3 class="undertitle">Email:</h3>
+                <h4 class="undertext">yuliya.swe@gmail.com</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

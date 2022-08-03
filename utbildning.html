@@ -23,7 +23,7 @@
     
     <nav class="navbar">
         <div class="logo">
-            <a href="main.html"><img src="images/yhlogo.svg" class="logo"/></a>
+            <a href="main.html"><img src="images/yhlogo.svg" alt="Yuliya Hagberg" class="logo"/></a>
         </div>
         <div class="social">
             <a href="mailto:yuliya.swe@gmail.com"><i class="fa-solid fa-envelope fa-lg"></i></a>
@@ -53,7 +53,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://www.ltu.se/" target="_blank"><img class="logos box" src="images/LTU.svg"></a>
+            <a href="https://www.ltu.se/" target="_blank"><img class="logos box" src="images/LTU.svg" alt="LTUs logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Digital tjänsteutveckling, </em></a>
@@ -67,7 +67,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://www.codecademy.com/" target="_blank"><img class="logos box" src="images/Code.svg"></a>
+            <a href="https://www.codecademy.com/" target="_blank"><img class="logos box" src="images/Code.svg" alt="Codecademys logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Front-end Engineer, </em></a>
@@ -81,7 +81,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://www.kth.se/" target="_blank"><img class="logos box" src="images/KTH.svg"></a>
+            <a href="https://www.kth.se/" target="_blank"><img class="logos box" src="images/KTH.svg" alt="KTHs logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Civilingenjör i samhällsbyggnad, </em></a>
@@ -95,7 +95,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://www.inredningskurser.se/" target="_blank"><img class="logos box" src="images/Inredning.svg"></a>
+            <a href="https://www.inredningskurser.se/" target="_blank"><img class="logos box" src="images/Inredning.svg" alt="Inredningskursernas logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Inredare, Homestagingkonsult & Inredningsstylist, </em></a>
@@ -108,7 +108,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://kungsholmensgymnasium.stockholm/" target="_blank"><img class="logos box" src="images/KG.svg"></a>
+            <a href="https://kungsholmensgymnasium.stockholm/" target="_blank"><img class="logos box" src="images/KG.svg" alt="Gymnasiets logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Naturvetenskapsprogrammet, </em></a>
@@ -121,7 +121,7 @@
 
     <div class="flex-container">
         <div class="aside">
-            <a href="https://www.dalecarnegie.se/" target="_blank"><img class="logos box" src="images/Dale.svg"></a>
+            <a href="https://www.dalecarnegie.se/" target="_blank"><img class="logos box" src="images/Dale.svg" alt="Dale Carnegies logotyp"></a>
         </div>
         <div class="main">
             <a class="title box"><em>Generation.Next, </em></a>
@@ -136,11 +136,53 @@
                 lärare, familj och arbetsgivare.</p>
         </div>
     </div>
-
 </section>
-</body>
 
-<footer>
-</footer>
+<section class="contact" id="contact">
+    <div class="text">Kontakta mig</div>
+    <div class="container">
+        <div class="container1">
+            <form action="https://formsubmit.co/yuliya.swe@gmail.com" method="POST">
+                <div class="fields">
+                    <div class="field name">
+                        <input type="text" name="Name" placeholder="Namn" required>
+                    </div>
+                    <div class="field email">
+                        <input type="email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea type="text" name="Message" placeholder="Meddelande..." required></textarea>
+                    </div>
+                        <input type="submit" value="Skicka" class="button"></input>
+                </div>
+            </form>
+        </div>
+
+        <div class="info">
+            <div class="container2">
+                <i class="fa-solid fa-user icon"></i>
+                <h3 class="undertitle">Namn:</h3>
+                <h4 class="undertext">Yuliya Hagberg</h4>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-location-dot icon"></i>
+                <h3 class="undertitle">Plats:</h3>
+                <h4 class="undertext">Stockholm, Sverige</h4>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-phone icon"></i>
+                <h3 class="undertitle">Mobilnummer:</h3>
+                <h4 class="undertext">+46 728 790 804</h4>
+            </div>
+            <div class="container2">
+                <i class="fa-solid fa-envelope icon"></i>
+                <h3 class="undertitle">Email:</h3>
+                <h4 class="undertext">yuliya.swe@gmail.com</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
 
 </html>
