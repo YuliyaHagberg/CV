@@ -3,35 +3,35 @@ body {
     padding: 0%;
     width: 100%;
     height:100%;
+    background-color: #253439;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* navbar styling */
 .navbar {
     position: relative;
     display: flex;
-    justify-content: center;
     width: 100%;
-    height: 80px;
+    height: 5em;
     background: white;
     font-family:'Coco-Gothic', light;
 }
 
 .navbar .logo img {
-    width: 100px;
-    height: 80px;
+    width: 7.8em;
     position: absolute;
     left: 50%;
-    top: 0px;
     transform: translateX(-50%);
-    margin: auto;
-    display: flex;
     justify-content: center;
 }
 
 .mainnav .menu li a {
     color: #101F24;
-    padding: 10px 35px;
-    font-size: 18px;
+    padding: 0.5em 2em;
+    font-size: 1.2em;
     text-decoration: none;
     display: block;
 }
@@ -44,7 +44,7 @@ body {
 
 .mainnav ul {
     margin: auto;
-    padding: 20px 20px;
+    padding: 1.2em;
     list-style: none;
     text-align: right;
 }
@@ -60,9 +60,7 @@ ul:last-child {
 }
 
 .mainnav {
-    float: none;
-    display: inline-block;
-    width: 1170px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -77,7 +75,7 @@ ul:last-child {
 .mainnav ul li a:hover{
     transition: 1s;
     background-color: #EFE7DD;
-    border-radius: 5px;
+    border-radius: 0.3em;
 }
 
 /* social media icons i navbar */
@@ -85,13 +83,13 @@ ul:last-child {
     float: left;
     margin-left: 0%;
     position: relative;
-    left: 20px;
-    top: 30px;
+    left: 0.9em;
+    top: 1.8em;
  }
 
  .navbar .social a {
     color: #B29E84;
-    padding: 5px;
+    padding: 0.2em;
  }
 
  .navbar .social a:hover {
@@ -102,8 +100,20 @@ ul:last-child {
  .form-select {
     border: none;
     position: relative;
-    top: 30px;
-    right: 30px;
+    top: 1.7em;
+    right: 1.7em;
+    display: block; 
+    font-size: 1rem;
+    color: #B29E84;
+    background-color: white;
+    cursor: pointer;
+ }
+ /* språk drop down menu */
+ .form-select {
+    border: none;
+    position: relative;
+    top: 1.7em;
+    right: 1.7em;
     display: block; 
     font-size: 1rem;
     color: #B29E84;
@@ -111,33 +121,32 @@ ul:last-child {
     cursor: pointer;
  }
 
-
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 1.5em;
+    right: 1.5em;
     z-index: 99;
     border: none;
     outline: none;
     background-color: #B29E84;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-  }
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
   
   #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+    background-color: #555;
+}
 
  /* text styling */
  .filosofi {
     color: white;
     justify-content: left;
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-bottom: 4em;
+    padding-top: 4em;
     background-color: #253439;
     background-size: 100%;
     position: relative;
@@ -145,55 +154,61 @@ ul:last-child {
 
 .filosofi .title {
     font-family: 'Coco-Gothic', regular;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-size: xx-large;
-    margin: 0px 470px 30px 150px;
+    margin: 0em 6em 1em 4.7em;
 }
 
 .filosofi .title2 {
     font-family: 'Coco-Gothic', regular;
-    letter-spacing: 2px;
+    letter-spacing: 0.09em;
     font-size: x-large;
-    margin: 50px 470px 15px 150px;
+    margin: 2em 6em 1em 6.2em;
 }
 
 .filosofi .text {
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 1px;
-    line-height: 20px;
-    font-size: 16px;
-    text-align: justify;
-    margin: 20px 530px auto 150px;
+    letter-spacing: 0.09em;
+    line-height: 1.3em;
+    font-size: 1em;
+    text-align: left;
+    margin-left: 9.3em;
+    max-width: 50%;
 }
 
 .filosofi .middle {
     font-family: 'Coco-Gothic', bold;
     font-weight: bolder;
-    letter-spacing: 1px;
-    line-height: 20px;
-    font-size: 18px;
-    line-height: 25px;
+    letter-spacing: 0.09em;
+    line-height: 1.4em;
+    font-size: 1.1em;
     text-align: center;
-    margin: 30px 580px 30px 200px;
+    margin-left: 10.5em;
+    max-width: 45%;
 }
 
 /* Kontakta mig */
+.contact {
+    background-color: white;
+    width: 100%;
+    padding-top:1.5em;
+}
+
 .contact .text {
     font-family: 'Coco-Gothic', regular;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-size: x-large;
     text-align: center;
-    margin-top:50px;
-    margin-bottom: 15px;
+    margin-top:2em;
+    margin-bottom: 1.5em;
 }
 
 .container {
     display:grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 80px;
-    margin-left: 50px;
+    padding-bottom: 4em;
+    margin-left: 3em;
 }
 
 .container1 {
@@ -201,43 +216,43 @@ ul:last-child {
     align-items: center;
     grid-template-columns: 1/2;
     grid-template-rows: 1/5;
-    padding: 30px 80px;
+    padding: 1.8em 3.5em;
 }
 
 .field input, .field textarea {
-    height: 40px;
+    height: 2.5em;
     width:100%;
     background-color:#f6f3ef;
-    border-bottom:#B29E84 4px solid;
+    border-bottom:#B29E84 0.25em solid;
     border-top:none;
     border-left:none;
     border-right:none;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     font-size: medium;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 input[type=text]:focus {
-    border-bottom:#253439 4px solid;
+    border-bottom:#253439 0.25em solid;
     outline:none;
 }
 
 input[type=email]:focus {
-    border-bottom:#253439 4px solid;
+    border-bottom:#253439 0.25em solid;
     outline:none;
 }
 
 textarea[type=text]:focus {
-    border-bottom:#253439 4px solid;
+    border-bottom:#253439 0.25em solid;
     outline:none;
   }
 
 .field textarea {
     align-content: center;
     resize:vertical;
-    height: 80px;
-    min-height: 40px;
+    height: 5em;
+    min-height: 3em;
 }
 
 .container1 .button {
@@ -245,10 +260,10 @@ textarea[type=text]:focus {
     background-color:#101F24;
     color: white;
     cursor: pointer;
-    padding: 10px 30px;
+    padding: 0.6em 2.5em;
     text-align: center;
-    border-radius: 10px;
-    font-size: 17px;
+    border-radius: 0.5em;
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -261,17 +276,15 @@ textarea[type=text]:focus {
     display: grid;
     grid-template-columns: 2/3;
     grid-template-rows: 1/5;
-    /* border: 1px solid #101F24; */
     align-content: start;
-    padding:20px;
+    padding: 1em;
 }
 
 .container2 {
     display:grid;
-    grid-template-columns: 30px auto 1fr;
+    grid-template-columns: 2em auto 1fr;
     align-items:right;
     align-content: start;
-    /* border: 1px solid #101F24; */
 }
 
 .container2 .icon {
@@ -282,7 +295,7 @@ textarea[type=text]:focus {
 
 .contact .undertitle {
     font-family: 'Coco-Gothic', regular;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-size: large;
     text-align: left;
     align-self: center;
@@ -290,10 +303,257 @@ textarea[type=text]:focus {
 
 .contact .undertext {
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-size: medium;
     font-weight: lighter;
     text-align: left;
     align-self: center;
-    margin: 10px;
+    margin: 0.5em;
 }
+
+@media (max-width: 560px) {
+    #myBtn {
+        font-size: 0.75em;
+    }
+    
+    .filosofi .title {
+        font-size: x-large;
+        margin: 0em auto 1em 1.3em;
+    }
+    
+    .filosofi .title2 {
+        font-size: large;
+        margin: 2em auto 1em 1.7em;
+    }
+    
+    .filosofi .text {
+        font-size: 0.8em;
+        margin-left: 2em;
+        max-width: 85%;
+    }
+    
+    .filosofi .middle {
+        font-size: 0.8em;
+        margin: 1.5em 2.5em;
+        max-width: 75%;
+    }
+    
+    .contact {
+        padding-top:1em;
+    }
+    
+    .contact .text {
+        font-size: larger;
+        margin-bottom: 1em;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        padding-bottom: 4em;
+        margin-left: 0.75em;
+    }
+    
+    .container1 {
+        padding: 1em 1em;
+    }
+
+    .field input, .field textarea {
+        height: 2em;
+        width:90%;
+        border-bottom:#B29E84 0.2em solid;
+        font-size:small;
+    }
+    
+    input[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    input[type=email]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    textarea[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+      }
+    
+    .container1 .button {
+        padding: 0.5em 1.5em;
+        border-radius: 0.5em;
+        font-size: 0.8em;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: 2/3;
+        grid-template-rows: 1/5;
+        align-content: start;
+        padding: 1em;
+    }
+    
+    .container2 .icon {
+        font-size: medium;
+    }
+    
+    .contact .undertitle {
+        font-size: medium;
+    }
+    
+    .contact .undertext {
+        font-size: small;
+        margin: 0.4em;
+    }
+}
+
+@media (max-width:1150px) {
+    .navbar {
+        height: 5em;
+    }
+    
+    .navbar .logo img {
+        width: 8em;
+    }
+    
+    .mainnav .menu li a {
+        font-size: 1.1em;
+    }
+    
+    .navbar .social {
+        top: 2em;
+        font-size: 1em;
+    }
+
+    ul:last-child {
+        margin-left: 3%;
+    }
+
+     .form-select {
+        top: 1.5em;
+        right: 1.7em;
+        font-size: 1.1em;
+    }
+
+}
+
+@media (min-width:1380px) {
+    #myBtn {
+        bottom: 3em;
+        right: 3em;
+        font-size: 2em;
+    }
+    
+    .navbar {
+        height: 6em;
+    }
+    
+    .navbar .logo img {
+        width: 9em;
+    }
+    
+    .mainnav .menu li a {
+        font-size: 1.6em;
+    }
+    
+    .navbar .social {
+        top: 1.3em;
+        font-size: 1.5em;
+    }
+
+    ul:last-child {
+        margin-left: 4%;
+    }
+
+     .form-select {
+        top: 1.2em;
+        right: 1.7em;
+        font-size: 1.6em;
+    }
+
+     .filosofi {
+        padding-bottom: 5em;
+    }
+    
+    .filosofi .title {
+        font-size: 4em;
+    }
+    
+    .filosofi .title2 {
+        font-size: 3em;
+    }
+    
+    .filosofi .text {
+        font-size: 2em;
+    }
+    
+    .filosofi .middle {
+        font-size: 2em;
+    }
+    
+    .contact .text {
+        font-size: 3em;
+    }
+    
+    .field input, .field textarea {
+        height: 4em;
+        width:70%;
+        font-size: x-large;
+        margin-bottom: 1em;
+    }
+    
+    .field textarea {
+        height: 6em;
+        min-height: 4em;
+    }
+
+    .container1 {
+        margin-left: 17em;
+        padding: 1.5em 0em;
+        width: 90%;
+    }
+    
+    .container1 .button {
+        padding: 0.6em 3em;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    
+    .container2 {
+        grid-template-columns: 5em auto 1fr;
+    }
+    
+    .container2 .icon {
+        font-size: 3em;
+    }
+    
+    .contact .undertitle {
+        font-size: 2em;
+    }
+    
+    .contact .undertext {
+        font-size: xx-large;
+    }
+}
+
+@media (min-width:1850px) { 
+    .navbar {
+        height: 7em;
+    }
+    
+    .navbar .logo img {
+        width: 10.8em;
+    }
+    
+    .mainnav .menu li a {
+        font-size: 2em;
+    }
+    
+    .navbar .social {
+        top: 1.2em;
+        font-size: 1.8em;
+     }
+    
+     .form-select {
+        top: 1em;
+        right: 1.7em;
+        font-size: 2rem;
+     }
+    }

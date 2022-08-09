@@ -3,35 +3,35 @@ body {
     padding: 0%;
     width: 100%;
     height:100%;
+    background-color: #253439;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* navbar styling */
 .navbar {
     position: relative;
     display: flex;
-    justify-content: center;
     width: 100%;
-    height: 80px;
+    height: 5em;
     background: white;
     font-family:'Coco-Gothic', light;
 }
 
 .navbar .logo img {
-    width: 100px;
-    height: 80px;
+    width: 7.8em;
     position: absolute;
     left: 50%;
-    top: 0px;
     transform: translateX(-50%);
-    margin: auto;
-    display: flex;
     justify-content: center;
 }
 
 .mainnav .menu li a {
     color: #101F24;
-    padding: 10px 35px;
-    font-size: 18px;
+    padding: 0.5em 2em;
+    font-size: 1.2em;
     text-decoration: none;
     display: block;
 }
@@ -44,7 +44,7 @@ body {
 
 .mainnav ul {
     margin: auto;
-    padding: 20px 20px;
+    padding: 1.2em;
     list-style: none;
     text-align: right;
 }
@@ -60,9 +60,7 @@ ul:last-child {
 }
 
 .mainnav {
-    float: none;
-    display: inline-block;
-    width: 1170px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -77,7 +75,7 @@ ul:last-child {
 .mainnav ul li a:hover{
     transition: 1s;
     background-color: #EFE7DD;
-    border-radius: 5px;
+    border-radius: 0.3em;
 }
 
 /* social media icons i navbar */
@@ -85,13 +83,13 @@ ul:last-child {
     float: left;
     margin-left: 0%;
     position: relative;
-    left: 20px;
-    top: 30px;
+    left: 0.9em;
+    top: 1.8em;
  }
 
  .navbar .social a {
     color: #B29E84;
-    padding: 5px;
+    padding: 0.2em;
  }
 
  .navbar .social a:hover {
@@ -102,8 +100,8 @@ ul:last-child {
  .form-select {
     border: none;
     position: relative;
-    top: 30px;
-    right: 30px;
+    top: 1.7em;
+    right: 1.7em;
     display: block; 
     font-size: 1rem;
     color: #B29E84;
@@ -112,31 +110,31 @@ ul:last-child {
  }
 
   /* text styling */
-  .erfarenhet {
+.erfarenhet {
     color: white;
     justify-content: left;
-    padding-bottom: 100px;
-    padding-top: 30px;
+    padding-bottom: 5em;
+    padding-top: 2em;
     background-color: #253439;
     background-size: 100%;
 }
 
 .title {
     font-family: 'Coco-Gothic', regular;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-size: x-large;
 }
 
 .text1 {
     font-family: 'Coco-Gothic', regular;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-size: large;
 }
 
 .text2 {
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 1px;
-    line-height: 25px;
+    letter-spacing: 0.09em;
+    line-height: 1.5em;
     font-size: medium;
     text-align: left;
     align-content: left;
@@ -144,51 +142,58 @@ ul:last-child {
 
 .text3 {
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 1px;
-    line-height: 25px;
+    letter-spacing: 0.09em;
+    line-height: 1.5em;
     font-size: medium;
     text-align: right;
 }
 
 .erfarenhet .logos {
-    width: 110px;
-    height: 110px;
-    padding-right: 35px;
+    width: 6em;
+    height: 6em;
+    padding-right: 2.5em;
 }
 
 .flex-container {
     display: flex;
-    padding: 50px 300px 20px 230px;
+    padding: 3em 0em 1em 15em;
+    max-width: 60%
 }
 
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 1.5em;
+    right: 1.5em;
     z-index: 99;
     border: none;
     outline: none;
     background-color: #B29E84;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-  }
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #555;
-  }
+}
 
 /* Kontakta mig */
+.contact {
+    background-color: white;
+    width: 100%;
+    padding-top:1.5em;
+}
+
 .contact .text {
     font-family: 'Coco-Gothic', regular;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-size: x-large;
     text-align: center;
-    margin-top:50px;
-    margin-bottom: 15px;
+    margin-top:2em;
+    margin-bottom: 1.5em;
 }
 
 .container {
@@ -196,8 +201,8 @@ ul:last-child {
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 80px;
-    margin-left: 50px;
+    padding-bottom: 4em;
+    margin-left: 3em;
 }
 
 .container1 {
@@ -205,43 +210,43 @@ ul:last-child {
     align-items: center;
     grid-template-columns: 1/2;
     grid-template-rows: 1/5;
-    padding: 30px 80px;
+    padding: 1.8em 3.5em;
 }
 
 .field input, .field textarea {
-    height: 40px;
+    height: 2.5em;
     width:100%;
     background-color:#f6f3ef;
-    border-bottom:#B29E84 4px solid;
+    border-bottom:#B29E84 0.25em solid;
     border-top:none;
     border-left:none;
     border-right:none;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     font-size: medium;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 input[type=text]:focus {
-    border-bottom:#253439 4px solid;
+    border-bottom:#253439 0.25em solid;
     outline:none;
 }
 
 input[type=email]:focus {
-    border-bottom:#253439 4px solid;
+    border-bottom:#253439 0.25em solid;
     outline:none;
 }
 
 textarea[type=text]:focus {
-    border-bottom:#253439 4px solid;
+    border-bottom:#253439 0.25em solid;
     outline:none;
   }
 
 .field textarea {
     align-content: center;
     resize:vertical;
-    height: 80px;
-    min-height: 40px;
+    height: 5em;
+    min-height: 3em;
 }
 
 .container1 .button {
@@ -249,10 +254,10 @@ textarea[type=text]:focus {
     background-color:#101F24;
     color: white;
     cursor: pointer;
-    padding: 10px 30px;
+    padding: 0.6em 2.5em;
     text-align: center;
-    border-radius: 10px;
-    font-size: 17px;
+    border-radius: 0.5em;
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -265,17 +270,15 @@ textarea[type=text]:focus {
     display: grid;
     grid-template-columns: 2/3;
     grid-template-rows: 1/5;
-    /* border: 1px solid #101F24; */
     align-content: start;
-    padding:20px;
+    padding: 1em;
 }
 
 .container2 {
     display:grid;
-    grid-template-columns: 30px auto 1fr;
+    grid-template-columns: 2em auto 1fr;
     align-items:right;
     align-content: start;
-    /* border: 1px solid #101F24; */
 }
 
 .container2 .icon {
@@ -286,7 +289,7 @@ textarea[type=text]:focus {
 
 .contact .undertitle {
     font-family: 'Coco-Gothic', regular;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-size: large;
     text-align: left;
     align-self: center;
@@ -294,10 +297,115 @@ textarea[type=text]:focus {
 
 .contact .undertext {
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-size: medium;
     font-weight: lighter;
     text-align: left;
     align-self: center;
-    margin: 10px;
+    margin: 0.5em;
+}
+
+@media (max-width: 670px) {
+    .navbar {
+        padding: 0.5em 0.5em;
+        gap: 0.2em;
+    }
+    
+    .navbar .logo img {
+        width: 4em;
+        left: 15%;
+    }
+    
+    .mainnav .menu li a {
+        padding: 0.2em 0em;
+        font-size: 1em;
+        display: block;
+    }
+    
+    .mainnav ul li {
+        position: relative;
+    }
+    
+    .mainnav ul {
+        margin-left: 1em;
+        padding: 0.5em;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 0.7em;
+    }
+        
+    .mainnav {
+        width: 90%;
+    }
+    
+    .navbar .social {
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        left: 0em;
+        top: 3.5em;
+    }
+    
+     .form-select {
+        top: 3.7em;
+        right: 0.8em;
+        font-size: 1rem;
+     }
+}
+
+@media (min-width:1390px) {
+    .navbar {
+        height: 6em;
+    }
+    
+    .navbar .logo img {
+        width: 9em;
+    }
+    
+    .mainnav .menu li a {
+        font-size: 1.6em;
+    }
+    
+    .navbar .social {
+        top: 1.3em;
+        font-size: 1.5em;
+     }
+
+    ul:last-child {
+        margin-left: 4%;
+    }
+
+     .form-select {
+        top: 1.2em;
+        right: 1.7em;
+        font-size: 1.6em;
+     }
+}
+
+@media (min-width:1750px) { 
+.navbar {
+    height: 7em;
+}
+
+.navbar .logo img {
+    width: 10.8em;
+}
+
+.mainnav .menu li a {
+    font-size: 2em;
+}
+
+.navbar .social {
+    top: 1.2em;
+    font-size: 1.8em;
+ }
+
+ .form-select {
+    top: 1em;
+    right: 1.7em;
+    font-size: 2rem;
+ }
+
 }
