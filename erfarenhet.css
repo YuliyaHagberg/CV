@@ -156,7 +156,7 @@ ul:last-child {
 
 .flex-container {
     display: flex;
-    padding: 3em 0em 1em 15em;
+    padding: 3em 0em 1em 10em;
     max-width: 60%
 }
 
@@ -305,17 +305,233 @@ textarea[type=text]:focus {
     margin: 0.5em;
 }
 
-@media (max-width: 670px) {
+@media (max-width:1750px) {
+    .erfarenhet .logos {
+        width: 6em;
+        height: 6em;
+        padding-right: 2em;
+    }
+    
+    .flex-container {
+        display: flex;
+        padding: 3em 0em 1em 11em;
+        max-width: 70%
+    }
+}
+
+@media (max-width: 850px) {
     .navbar {
-        padding: 0.5em 0.5em;
-        gap: 0.2em;
+        height: 5em;
     }
     
     .navbar .logo img {
-        width: 4em;
-        left: 15%;
+        width: 8em;
     }
     
+    .mainnav .menu li a {
+        font-size: 1.1em;
+    }
+    
+    .navbar .social {
+        top: 2em;
+        font-size: 1em;
+    }
+
+    ul:last-child {
+        margin-left: 3%;
+    }
+
+    .form-select {
+        top: 1.5em;
+        right: 1.7em;
+        font-size: 1.1em;
+    }
+
+    #myBtn {
+        font-size: 0.75em;
+    }
+    
+    .erfarenhet .logos {
+        width: 6em;
+        height: 6em;
+        padding-right: 1.5em;
+    }
+    
+    .flex-container {
+        padding: 3em 0em 1em 2em;
+        max-width: 90%
+    }
+
+    .contact {
+        padding-top:1em;
+    }
+    
+    .contact .text {
+        font-size: larger;
+        margin-bottom: 1em;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        padding-bottom: 4em;
+        margin-left: 0.75em;
+    }
+    
+    .container1 {
+        padding: 1em 1em;
+    }
+
+    .field input, .field textarea {
+        height: 2em;
+        width:90%;
+        border-bottom:#B29E84 0.2em solid;
+        font-size:small;
+    }
+    
+    input[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    input[type=email]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    textarea[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    .container1 .button {
+        padding: 0.5em 1.5em;
+        border-radius: 0.5em;
+        font-size: 0.8em;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: 2/3;
+        grid-template-rows: 1/5;
+        align-content: start;
+        padding: 1em;
+    }
+    
+    .container2 .icon {
+        font-size: medium;
+    }
+    
+    .contact .undertitle {
+        font-size: medium;
+    }
+    
+    .contact .undertext {
+        font-size: small;
+        margin: 0.4em;
+    }
+}
+
+@media (max-width: 560px) {
+    #myBtn {
+        font-size: 0.75em;
+    }
+
+    .erfarenhet {
+        background-size: 100%;
+    }
+    
+    .title {
+        font-size: large;
+    }
+    
+    .text1 {
+        font-size: medium;
+    }
+    
+    .text2 {
+        font-size: small;
+    }
+    
+    .text3 {
+        font-size: small;
+    }
+    
+    .erfarenhet .logos {
+        width: 3em;
+        height: 3em;
+        padding-right: 1em;
+    }
+    
+    .flex-container {
+        display: flex;
+        padding: 3em 0em 1em 1em;
+        max-width: 90%
+    }
+
+    .contact {
+        padding-top:1em;
+    }
+    
+    .contact .text {
+        font-size: larger;
+        margin-bottom: 1em;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        padding-bottom: 4em;
+        margin-left: 0.75em;
+    }
+    
+    .container1 {
+        padding: 1em 1em;
+    }
+
+    .field input, .field textarea {
+        height: 2em;
+        width:90%;
+        border-bottom:#B29E84 0.2em solid;
+        font-size:small;
+    }
+    
+    input[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    input[type=email]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    textarea[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    .container1 .button {
+        padding: 0.5em 1.5em;
+        border-radius: 0.5em;
+        font-size: 0.8em;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: 2/3;
+        grid-template-rows: 1/5;
+        align-content: start;
+        padding: 1em;
+    }
+    
+    .container2 .icon {
+        font-size: medium;
+    }
+    
+    .contact .undertitle {
+        font-size: medium;
+    }
+    
+    .contact .undertext {
+        font-size: small;
+        margin: 0.4em;
+    }
+}
+
+@media (max-width: 1100px){
     .mainnav .menu li a {
         padding: 0.2em 0em;
         font-size: 1em;
@@ -335,53 +551,6 @@ textarea[type=text]:focus {
         column-gap: 1em;
         row-gap: 0.7em;
     }
-        
-    .mainnav {
-        width: 90%;
-    }
-    
-    .navbar .social {
-        display:flex;
-        flex-direction: row;
-        position: relative;
-        left: 0em;
-        top: 3.5em;
-    }
-    
-     .form-select {
-        top: 3.7em;
-        right: 0.8em;
-        font-size: 1rem;
-     }
-}
-
-@media (min-width:1390px) {
-    .navbar {
-        height: 6em;
-    }
-    
-    .navbar .logo img {
-        width: 9em;
-    }
-    
-    .mainnav .menu li a {
-        font-size: 1.6em;
-    }
-    
-    .navbar .social {
-        top: 1.3em;
-        font-size: 1.5em;
-     }
-
-    ul:last-child {
-        margin-left: 4%;
-    }
-
-     .form-select {
-        top: 1.2em;
-        right: 1.7em;
-        font-size: 1.6em;
-     }
 }
 
 @media (min-width:1750px) { 
@@ -400,12 +569,125 @@ textarea[type=text]:focus {
 .navbar .social {
     top: 1.2em;
     font-size: 1.8em;
- }
+}
 
- .form-select {
+.form-select {
     top: 1em;
     right: 1.7em;
     font-size: 2rem;
- }
+}
 
+#myBtn {
+    bottom: 3em;
+    right: 3em;
+    font-size: 2em;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.text1 {
+    font-size: xx-large;
+}
+
+.text2 {
+    font-size: xx-large;
+}
+
+.text3 {
+    font-size: xx-large;
+}
+
+.erfarenhet .logos {
+    width: 10em;
+    height: 10em;
+    padding-right: 3.5em;
+}
+
+.flex-container {
+    padding: 3em 0em 1em 15em;
+    max-width: 60%
+}
+
+.contact .text {
+    font-size: 3em;
+}
+
+.field input, .field textarea {
+    height: 4em;
+    width:70%;
+    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+.field textarea {
+    height: 6em;
+    min-height: 4em;
+}
+
+.container1 {
+    margin-left: 17em;
+    padding: 1.5em 0em;
+    width: 90%;
+}
+
+.container1 .button {
+    padding: 0.6em 3em;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.container2 {
+    grid-template-columns: 5em auto 1fr;
+}
+
+.container2 .icon {
+    font-size: 3em;
+}
+
+.contact .undertitle {
+    font-size: 2em;
+}
+
+.contact .undertext {
+    font-size: xx-large;
+}
+}
+
+@media (max-width: 1024px){
+    .social{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 670px) {
+    .navbar {
+        padding: 0.5em 0.5em;
+        gap: 0.2em;
+    }
+    
+    .navbar .logo img {
+        width: 4em;
+        left: 15%;
+    }
+        
+    .mainnav {
+        width: 90%;
+    }
+    
+    .navbar .social {
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        left: 0em;
+        top: 3.5em;
+    }
+    
+     .form-select {
+        top: 3.7em;
+        right: 0.8em;
+        font-size: 1rem;
+     }
 }

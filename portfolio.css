@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
+
+
 /* navbar styling */
 .navbar {
     position: relative;
@@ -109,8 +113,12 @@ ul:last-child {
     cursor: pointer;
  }
 
+
+
+
+
   /* text styling */
-  .portfolio {
+.portfolio {
     color: white;
     padding-bottom: 5em;
     padding-top: 2em;
@@ -136,15 +144,6 @@ ul:last-child {
     color:#101F24;
     flex-wrap: wrap;
     padding: 2em;
-}
-
-.container4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1em;
-    justify-content: center;
-    color:#101F24;
-    padding: 2em 7.6em;
 }
 
 .flex-item {
@@ -199,7 +198,7 @@ ul:last-child {
     font-size: 1em;
 }
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #555;
 }
 
@@ -263,7 +262,7 @@ input[type=email]:focus {
 textarea[type=text]:focus {
     border-bottom:#253439 0.25em solid;
     outline:none;
-  }
+}
 
 .field textarea {
     align-content: center;
@@ -328,22 +327,351 @@ textarea[type=text]:focus {
     margin: 0.5em;
 }
 
-@media (max-width: 1024px) {
-
+.container4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 770px) {
-
+img{
+    width: 10em;
+    height: 10em;
+    margin: 0.5em;
 }
 
-@media (max-width: 425px) {
-
-}
-
-@media (max-width: 375px) {
-
-}
-
-@media (max-width: 320px) {
+@media (max-width: 850px) {
+    .navbar {
+        height: 5em;
+    }
     
+    .navbar .logo img {
+        width: 8em;
+    }
+    
+    .mainnav .menu li a {
+        font-size: 1.1em;
+    }
+    
+    .navbar .social {
+        top: 2em;
+        font-size: 1em;
+    }
+
+    ul:last-child {
+        margin-left: 3%;
+    }
+
+    .form-select {
+        top: 1.5em;
+        right: 1.7em;
+        font-size: 1.1em;
+    }
+
+    #myBtn {
+        font-size: 0.75em;
+    }
+
+    .flex-item {
+        width: 6em;
+        height: 6em;
+    }
+
+    
+    .title {
+        font-size: large;
+    }
+
+    .contact {
+        padding-top:1em;
+    }
+    
+    .contact .text {
+        font-size: larger;
+        margin-bottom: 1em;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        padding-bottom: 4em;
+        margin-left: 0.75em;
+    }
+    
+    .container1 {
+        padding: 1em 1em;
+    }
+
+    .field input, .field textarea {
+        height: 2em;
+        width:90%;
+        border-bottom:#B29E84 0.2em solid;
+        font-size:small;
+    }
+    
+    input[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    input[type=email]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    textarea[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    .container1 .button {
+        padding: 0.5em 1.5em;
+        border-radius: 0.5em;
+        font-size: 0.8em;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: 2/3;
+        grid-template-rows: 1/5;
+        align-content: start;
+        padding: 1em;
+    }
+    
+    .container2 .icon {
+        font-size: medium;
+    }
+    
+    .contact .undertitle {
+        font-size: medium;
+    }
+    
+    .contact .undertext {
+        font-size: small;
+        margin: 0.4em;
+    }
 }
+
+@media (max-width: 560px) {
+    #myBtn {
+        font-size: 0.75em;
+    }
+
+    .flex-item {
+        width: 5em;
+        height: 5em;
+    }
+
+    .title {
+        font-size: medium;
+    }
+
+    .contact {
+        padding-top:1em;
+    }
+    
+    .contact .text {
+        font-size: larger;
+        margin-bottom: 1em;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        padding-bottom: 4em;
+        margin-left: 0.75em;
+    }
+    
+    .container1 {
+        padding: 1em 1em;
+    }
+
+    .field input, .field textarea {
+        height: 2em;
+        width:90%;
+        border-bottom:#B29E84 0.2em solid;
+        font-size:small;
+    }
+    
+    input[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    input[type=email]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    textarea[type=text]:focus {
+        border-bottom:#253439 0.2em solid;
+    }
+    
+    .container1 .button {
+        padding: 0.5em 1.5em;
+        border-radius: 0.5em;
+        font-size: 0.8em;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: 2/3;
+        grid-template-rows: 1/5;
+        align-content: start;
+        padding: 1em;
+    }
+    
+    .container2 .icon {
+        font-size: medium;
+    }
+    
+    .contact .undertitle {
+        font-size: medium;
+    }
+    
+    .contact .undertext {
+        font-size: small;
+        margin: 0.4em;
+    }
+}
+
+@media (max-width: 1100px){
+    .mainnav .menu li a {
+        padding: 0.2em 0em;
+        font-size: 1em;
+        display: block;
+    }
+    
+    .mainnav ul li {
+        position: relative;
+    }
+    
+    .mainnav ul {
+        margin-left: 1em;
+        padding: 0.5em;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 0.7em;
+    }
+}
+
+@media (min-width:1750px) { 
+.navbar {
+    height: 7em;
+}
+
+.navbar .logo img {
+    width: 10.8em;
+}
+
+.mainnav .menu li a {
+    font-size: 2em;
+}
+
+.navbar .social {
+    top: 1.2em;
+    font-size: 1.8em;
+}
+
+.form-select {
+    top: 1em;
+    right: 1.7em;
+    font-size: 2rem;
+}
+
+#myBtn {
+    bottom: 3em;
+    right: 3em;
+    font-size: 2em;
+}
+
+.flex-item {
+    width: 8em;
+    height: 8em;
+}
+
+.contact .text {
+    font-size: 3em;
+}
+
+.field input, .field textarea {
+    height: 4em;
+    width:70%;
+    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+.field textarea {
+    height: 6em;
+    min-height: 4em;
+}
+
+.container1 {
+    margin-left: 17em;
+    padding: 1.5em 0em;
+    width: 90%;
+}
+
+.container1 .button {
+    padding: 0.6em 3em;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.container2 {
+    grid-template-columns: 5em auto 1fr;
+}
+
+.container2 .icon {
+    font-size: 3em;
+}
+
+.contact .undertitle {
+    font-size: 2em;
+}
+
+.contact .undertext {
+    font-size: xx-large;
+}
+}
+
+@media (max-width: 1024px){
+    .social{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+#yhlog{
+    margin-top: -2.5em;
+}
+
+@media (max-width: 670px) {
+    .navbar {
+        padding: 0.5em 0.5em;
+        gap: 0.2em;
+    }
+    
+    .navbar .logo img {
+        width: 4em;
+        left: 15%;
+    }
+        
+    .mainnav {
+        width: 90%;
+    }
+    
+    .navbar .social {
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        left: 0em;
+        top: 3.5em;
+    }
+    
+     .form-select {
+        top: 3.7em;
+        right: 0.8em;
+        font-size: 1rem;
+     }
+
+     #yhlog{
+        margin-top: -3.8em;
+    }
+}
+

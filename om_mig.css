@@ -404,6 +404,28 @@ textarea[type=text]:focus {
     }
 }
 
+@media (max-width: 1100px){
+    .mainnav .menu li a {
+        padding: 0.2em 0em;
+        font-size: 1em;
+        display: block;
+    }
+    
+    .mainnav ul li {
+        position: relative;
+    }
+    
+    .mainnav ul {
+        margin-left: 1em;
+        padding: 0.5em;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 0.7em;
+    }
+}
+
 @media (max-width:1150px) {
     .navbar {
         height: 5em;
@@ -551,9 +573,46 @@ textarea[type=text]:focus {
         font-size: 1.8em;
      }
     
-     .form-select {
+    .form-select {
         top: 1em;
         right: 1.7em;
         font-size: 2rem;
-     }
     }
+}
+
+@media (max-width: 1024px){
+    .social{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 670px) {
+    .navbar {
+        padding: 0.5em 0.5em;
+        gap: 0.2em;
+    }
+    
+    .navbar .logo img {
+        width: 4em;
+        left: 15%;
+    }
+        
+    .mainnav {
+        width: 90%;
+    }
+    
+    .navbar .social {
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        left: 0em;
+        top: 3.5em;
+    }
+    
+     .form-select {
+        top: 3.7em;
+        right: 0.8em;
+        font-size: 1rem;
+     }
+}

@@ -180,26 +180,6 @@ ul:last-child {
         width: 4em;
         left: 15%;
     }
-    
-    .mainnav .menu li a {
-        padding: 0.2em 0em;
-        font-size: 1em;
-        display: block;
-    }
-    
-    .mainnav ul li {
-        position: relative;
-    }
-    
-    .mainnav ul {
-        margin-left: 1em;
-        padding: 0.5em;
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 1em;
-        row-gap: 0.7em;
-    }
         
     .mainnav {
         width: 90%;
@@ -264,6 +244,28 @@ ul:last-child {
         width: 20em;
         top: 5em;
         right: 1em;
+    }
+}
+
+@media (max-width: 1100px){
+    .mainnav .menu li a {
+        padding: 0.2em 0em;
+        font-size: 1em;
+        display: block;
+    }
+    
+    .mainnav ul li {
+        position: relative;
+    }
+    
+    .mainnav ul {
+        margin-left: 1em;
+        padding: 0.5em;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 0.7em;
     }
 }
 
@@ -379,5 +381,12 @@ ul:last-child {
     .programming {
         height: 3.5em;
         gap: 1.5em;
+    }
+}
+
+@media (max-width: 1024px){
+    .social{
+        display: flex;
+        flex-direction: row;
     }
 }
